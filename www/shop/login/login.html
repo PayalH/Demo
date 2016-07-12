@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-background-color">
+    <h1 class="title bar-background-color">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear bar-background-color" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <input type="email" placeholder='Your Username or Email Address' ng-model="loginData.email">
+        </label>
+        <label class="item item-input">
+          <input type="password" placeholder='Your Password' ng-model="loginData.password">
+        </label>
+        <div class="row row-border">
+            <div class="button-height padding-right button-fifty">
+                <button class="button button-block button-positive" ng-click="doLogin()">Log in</button>
+            </div>
+             <div class="button-height button-fifty">
+                <button class="button button-block button-positive button-height" ng-click="registration()">Sign up</button>
+            </div>
+        </div>
+        <div class="assertive" style="text-align:center" ng-show="error">
+                <div class="title">{{ error}}</div>
+        </div>
+      </div>
+    </form>
+    
+    <div class="row">
+        <div class="login-button padding-right">
+            <button class="button button-block button-clear button-height text-color" ng-click="forgot()">Forgot your password?</button>
+        </div>
+    </div>      
+  </ion-content>
+</ion-modal-view>

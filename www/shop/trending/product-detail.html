@@ -1,0 +1,50 @@
+<ion-header-bar class="bar-subheader padding-top-null padding-null">
+  <div class="item-input-inset padding-top-null">
+    <label class="item-input-wrapper">
+      <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" class="search-width" placeholder="Search" ng-model="search">
+<!--                <button ng-if="search.length" class="button button-icon ion-android-close input-button" ng-click="clearSearch()"></button>-->
+    </label>            
+  </div>         
+</ion-header-bar>
+<ion-view view-title="Product Detail">      
+    <ion-pane>        
+        <ion-content> 
+            <div class="list padding">                  
+                <div class="padding">
+                  <div class='ion-catalog-content'>
+                    <div class='list card widecard'>
+                      <div class="item item-divider item-image">
+                        <img ng-src="{{ product.photo }}">
+                      </div>
+                      <div class="item item-divider item-text-wrap">
+                            <h2>Product name:  {{product.product_name}}</h2>
+                            <h2>Description:   {{product.product_description}}</h2>
+                            <h2>Category:      {{product.category}}</h2>
+                            <h2>Location:      {{product.location}}</h2>                                    
+                            <h2>Delivery options:{{product.delivery}}</h2>
+                            <h2>Price:          {{product.price}}</h2>
+                        </div> 
+                        <div class="item item-divider item-text-wrap row">
+                            <div class="col">
+                                <h2>Ratings: {{product.rating}}</h2>
+                            </div>
+                            <div class="col">
+                                <h2>No of trancitions: {{product.trans}}</h2>
+                            </div>
+                        </div> 
+                      <div class="button-bar">
+                          <div class="padding-right  button-fifty">
+                                <button class="button button-positive ion-bag icon-left bar-dark" ng-click='goToCategory(product.categoryId)'>Add to Bag</button>
+                          </div>
+                          <div class="button-fifty">
+                              <button class="button button-positive ion-ios-cart-outline icon-left" ng-click='addToCart(product)'>Buy for ${{product.myPrice}}</button>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-pane>
+</ion-view>

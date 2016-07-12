@@ -1,0 +1,21 @@
+{ "user" : 
+    [
+        { 
+            "email":"john.doe@gmail.com" , 
+            "password":"Doe" 
+        },
+        {
+            "email":"Anna" , 
+            "password":"Smith"
+        } 
+    ]
+};
+
+{
+    "validuser": "true",
+    "errorMessage": null,
+    "id": "1",
+    "firstName": "john",
+    "lastName": "doe" 
+    
+}

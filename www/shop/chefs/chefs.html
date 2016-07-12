@@ -1,0 +1,40 @@
+<ion-view view-title="Chefs">    
+    <ion-list> 
+        <div class="item col-header item-icon-right" ng-click="flipChefsProfile()">
+            <div class="flex-container wrap" >
+                <div  class='list card widecard'>
+                  <div class="item item-divider item-image">
+                    <img ng-src="{{ product.Image1 }}">
+                  </div>
+                  <div class="item item-divider item-text-wrap"><h2>Product name: {{product.name}}</h2></div>
+                  <div class="item item-divider item-text-wrap"><h2>Price: {{product.price}}</h2></div>   
+                    <div class="item item-divider item-text-wrap row">
+                        <div class="col-sd-6 side-border">
+                            <label>1</label><br />
+                            <label>Rating</label>
+                        </div>
+                        <div class="col-sd-6 side-border padding-left">
+                            <label>1</label><br />
+                            <label>No of transection</label>
+                        </div>
+                        <div class="col-sd-6 padding-left">
+                            <label>1</label><br />
+                            <label>Follower</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--
+        <div class="item low-pad-item item-icon-right" ng-repeat="item in data.items | orderBy:sortData:data.sortReverse ">
+            <div class="flex-container wrap">
+                <div ng-repeat="column in data.columns">
+                    <div class="column">{{item[column.id]}}&nbsp;</div>
+                </div>
+            </div>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+        </div>        
+    -->
+    </ion-list>
+</ion-view>

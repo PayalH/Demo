@@ -1,0 +1,52 @@
+<ion-nav-bar class="bar-stable bar-background-color">
+    <ion-nav-back-button></ion-nav-back-button>     
+    <ion-nav-buttons side="right" class="padding-right padding">
+        <label ng-hide="userlogged" class="label-height"><b>{{name}} </b></label>
+        <button class="button icon button-positive ion-log-out" ng-click="logout()"></button>
+        <button class="button icon button-positive ion-bag"  ></button>
+    </ion-nav-buttons>
+    
+</ion-nav-bar>
+<ion-tabs class="tabs-icon-top tabs-color-active-positive tab-height bar-background-color">
+<!--
+    <div class="tab-height" id="buyer">
+      
+      <ion-tab title="Home" icon-off="ion-home" icon-on="ion-android-home" href="#/tab/home">
+        <ion-nav-view name="home"></ion-nav-view>
+      </ion-tab>
+-->
+
+      <!-- Account Tab -->
+<!--
+      <ion-tab title="Me" icon-off="ion-person" icon-on="ion-person" href="#/tab/user">
+        <ion-nav-view name="user"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Activity" icon-off="ion-ios-briefcase" icon-on="ion-ios-briefcase" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
+      </ion-tab>
+    </div>  
+-->
+    
+  <div class="tab-height" >
+      <!-- Dashboard Tab -->
+      <ion-tab title="Home" icon-off="ion-home" icon-on="ion-android-home" href="#/tab/home">
+        <ion-nav-view name="home"></ion-nav-view>
+      </ion-tab>
+
+      <!-- Chats Tab -->
+
+      <ion-tab title="Sell" icon-off="ion-ios-camera-outline" icon-on="ion-ios-camera-outline" href="#/tab/sell">
+        <ion-nav-view name="sell"></ion-nav-view>
+      </ion-tab>
+
+      <!-- Account Tab -->
+      <ion-tab title="Me" icon-off="ion-person" icon-on="ion-person" href="#/tab/user">
+        <ion-nav-view name="user"></ion-nav-view>
+      </ion-tab>
+
+      <ion-tab title="Activity" icon-off="ion-ios-briefcase" icon-on="ion-ios-briefcase" href="#/tab/account">
+        <ion-nav-view name="tab-account"></ion-nav-view>
+      </ion-tab>
+    </div>      
+</ion-tabs>

@@ -1,0 +1,48 @@
+<ion-view view-title="Chefs Profile">      
+    <ion-pane>        
+        <ion-content> 
+            <div class="list padding">                 
+                <div class="padding">
+                  <div class='ion-catalog-content'>
+                    <div class='list card widecard'>
+                      <div class="item item-divider item-image row">
+                        <div class="col"> 
+                            <img ng-src="{{ product.Image1 }}">
+                           </div>    
+                        <div class="col">
+                            <h2>Name: {{}}</h2>
+                            <h2 class="padding-left"> Biography: {{}}</h2>
+                          </div>  
+                      </div>
+                     <div class="item item-divider item-text-wrap row">
+                        <div class="col-sd-6 side-border">
+                            <label>1</label><br />
+                            <label>Rating</label>
+                        </div>
+                        <div class="col-sd-6 side-border padding-left">
+                            <label>1</label><br />
+                            <label>No of transection</label>
+                        </div>
+                        <div class="col-sd-6 padding-left">
+                            <label>1</label><br />
+                            <label>Follower</label>
+                        </div>
+                       </div>
+                       <div class="item item-divider item-text-wrap">
+                           <div ng-click="flip()" class="flip-container">
+                              <a collection-repeat="product in productdata |searchtext:search" class="item list widecard" href="#/tab/productDetail/{{product.product_id}}">
+                              <div class="item item-divider item-image">
+                                <img ng-src="{{product.photo}}">
+                              </div>
+                              <div class="item item-divider item-text-wrap"><h2>Product name: {{product.product_name}}</h2></div>
+                              <div class="item item-divider item-text-wrap"><h2>Price: {{product.price}}</h2></div>               
+                            </a>
+                           </div>
+                        </div>    
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-pane>
+</ion-view>

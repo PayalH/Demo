@@ -1,0 +1,359 @@
+/* Empty. Add your own CSS if you like */
+/*
+.slider-slides{
+  height: 30% !important;
+}
+
+.slider{
+    height: 40% !important;
+}
+*/
+
+/*Padding*/
+
+.padding-right{padding-right: 15px !important;}
+.padding-bottom{padding-bottom: 15px; !important}
+.padding-left{padding-left: 15px !important;}
+.padding-top{padding-top: 15px !important;}
+
+.padding-top-percent{padding-top: 20% !important;}
+
+/* Padding zero*/
+.padding-null{padding: 0px !important;}
+.padding-right-null{padding-right: 0% !important;}
+.padding-bottom-null{padding-bottom: 0% !important;}
+.padding-left-null{padding-left: 0% !important;}
+.padding-top-null{padding-top: 0% !important;}
+
+/*Border*/
+.border-bottom{border-bottom-width:0px !important;}
+
+/*.tab-height{height: 70px;}*/
+
+.my-menu {
+  background-color: #3f4041;
+  border-width: 0px !important;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+   
+}
+.item-input-inset .item-input-wrapper{
+     padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !improtant;
+}
+.search-width{
+    width: 100% !important;
+}
+
+.my-menu .list {
+  background-color: transparent;
+}
+
+.my-menu .item, .my-menu .item-content, .my-menu .item-complex{
+  background-color: transparent;
+  color: #FFFFFF;
+  border-color: rgba(0,0,0,0);
+}
+
+.item .item-dark {
+	border-color: rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+}
+
+.icon-right{    
+    max-width: 10px !important;
+    min-width: 10% !important;
+    min-height: 10% !important;
+    max-height: 99% !important;
+}
+
+/*button*/
+.button-height {
+  min-height: 10% !important; 
+}
+
+.login-button{
+    min-width: 40% !important;
+    padding-top: 0px !important;
+    min-height: 10% !important;}
+
+.right-align{
+    float: right;
+}
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+.flip-container.flip .flipper {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.flip-container .top,
+.front .top,
+.back .top {
+  padding: 30px 20px;
+}
+
+.flip-container .top,
+.flip-container .icon-holder,
+.front .top,
+.front .icon-holder,
+.back .top,
+.back .icon-holder {
+  background-color: #777777;
+  color: #fff;
+}
+
+.flip-container .icon-holder,
+.front .icon-holder,
+.back .icon-holder {
+  margin: -25px auto 0;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  width: 50px;
+  height: 50px;
+  padding: 7px 10px 10px;
+  font-size: x-large;
+}
+
+.front.success .top,
+.front.success .icon-holder,
+.back.success .top,
+.back.success .icon-holder {
+  background-color: #23AE89;
+  color: #fff;
+}
+/* flip speed goes here */
+
+.flipper {
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -ms-transition: 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  position: relative;
+}
+/* hide back of pane during swap */
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* front pane, placed above back */
+
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+/* back, initially hidden pane */
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.img-upload{
+    width: 100px;
+    height: 100px;
+    border-bottom-style: solid;
+    border-bottom-color: #444;
+}
+
+
+.transparent {
+  background: transparent !important;
+}
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.slider {
+  width: 100%;
+  height: 100%;
+}
+
+p.info {
+  position: absolute;
+  bottom: 55px;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+/* Fix modal backdrop for smaller devices */
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.wrap    {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 320px) {
+
+    .flex-container.wrap > div{
+        width: 50%;
+        max-width: 50%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 321px) {
+    .flex-container.wrap > div{
+        width: 33%;
+        max-width: 33%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 480px) {
+    .flex-container.wrap > div{
+        width: 25%;
+        max-width: 25%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 640px) {
+    .flex-container.wrap > div{
+        width: 20%;
+        max-width: 20%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 960px) {
+    .flex-container.wrap > div{
+        width: 15%;
+        max-width: 15%;
+        text-overflow: '';
+        white-space:nowrap;
+        overflow: hidden;
+    }
+}
+
+.low-pad-item {
+    padding: 0;
+    margin: 0;
+}
+
+.col-header {
+    font-weight: bold;
+}
+
+.column {
+    text-overflow: '';
+    white-space:nowrap;
+    overflow: hidden;
+    max-width: 87%;
+    float: left;
+    padding: 2px 5px;
+}
+
+.col-header > .column {
+    padding: 5px 5px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.column-sort {
+    min-width:13%;
+    float: right;
+    text-align: right;
+    padding-right: 2px;
+}
+
+.product-text{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 50%;
+}

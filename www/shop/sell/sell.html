@@ -1,0 +1,81 @@
+<ion-view view-title="Photos"> 
+      <ion-pane>        
+        <ion-content padding="true" ng-controller="ExampleController">             
+<!--
+            <div class="input-group">
+                      <input type="search" id="search" class="form-control" ng-model="search">
+                      <div class="input-group-addon">Found {{(movies | filter:search).length}} of {{movies.length}}</div>
+                    </div>
+-->
+            <section class = "home-container">                
+                <ion-view>         
+                    <ion-content >
+                    <div ng-hide="addDescription">    
+                        <div class="padding-bottom padding-left padding-right padding-top">   
+                            <button class="button button-assertive ion-ios-camera photo-button" ng-click="takePhoto()">
+                            Take Photo
+                            </button>
+                        </div>  
+                        <div class="padding-left padding-right">       
+                            <button class="button button-assertive ion-image photo-button" ng-click="choosePhoto()">
+                            Choose Photo
+                            </button>
+                        </div>
+                    </div>    
+                    <div  ng-show="addDescription" class="padding-bottom">    
+                        <ion-header-bar class="bar-background-color padding-bottom">
+                            <div class="buttons">
+                              <button class="button button-clear bar-background-color" ng-click="closeProductDes()">Close</button>
+                            </div>
+                            <div class="buttons padding-sell-button padding-bottom">
+                              <button class="button button-clear bar-background-color" ng-click="submitProductDes()">Submit</button>
+                            </div>
+                        </ion-header-bar>    
+                        <div class = "item padding-photo-top">
+                            <button class="button button-assertive" ng-click="addPhoto(imgURI)">Add photo</button>
+                        </div>
+                        <div class="padding-bottom row" ng-repeat="image in imgArr">       
+                            <img ng-show="imgURI !== undefined" ng-model="imgURI" ng-src="{{imgURI}}" style="text-align: center">
+<!--                            <img class="ion-android-add" ng-click="addPhoto()"></img>-->
+                        </div>
+                        <label class="item item-input">
+                          <span class="input-label">Product Name</span>
+                          <input type="text" placeholder='Product Name' ng-model="sell.productname">
+                        </label>
+                        <label class="item item-input">
+                          <span class="input-label">Product Description</span>
+                          <input type="text" ng-maxlength='250' placeholder='Product Description' ng-model="sell.productdes">
+                        </label>
+                        <label class="item item-input">
+                          <span class="input-label">Price</span>
+                          <input type="text" placeholder='Your Price' ng-model="sell.price">
+                        </label>
+                        <label class="item item-input">
+                          <span class="input-label">Category</span>
+                          <input type="text" placeholder='Your Category' ng-model="sell.category">
+                        </label>
+                        <label class="item item-input">
+                          <span class="input-label">Location</span>
+                          <input type="text" placeholder="Enter your home address" ng-model="sell.address">    
+                        </label>
+                        <div class="item label-padding-sell">
+                            <label class="padding-radio" aria-label="Delivery">Delivery</label>
+                            <label>
+                                <input type="radio" ng-model="sell.delivery" value="0">Self Collection                            
+                            </label> 
+                            <label>
+                                <input type="radio" ng-model="sell.delivery" value="1">Delivery                           
+                            </label>
+                        </div>
+                        <label class="item item-input padding-sell-bottom">
+                          <span class="input-label">*Learn about how our commission works</span>
+                        </label>
+                        <label class="item item-input padding-bottom">
+                        </label>    
+                      </div>     
+                    </ion-content>
+                </ion-view> 
+            </section>
+          </ion-content>
+    </ion-pane>
+</ion-view>

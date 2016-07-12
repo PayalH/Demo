@@ -1,0 +1,62 @@
+<ion-view view-title="Home">
+    
+    
+    <ion-pane>        
+        <ion-content>             
+<!--
+            <div class="input-group">
+                      <input type="search" id="search" class="form-control" ng-model="search">
+                      <div class="input-group-addon">Found {{(movies | filter:search).length}} of {{movies.length}}</div>
+                    </div>
+-->
+            <section class = "home-container">                
+                <ion-view>         
+                    <!--      slider class          -->
+                    <ion-slide-box class="padding-top-percent" auto-play="true" does-continue="true" slide-interval="3000" on-slide-changed="slideChanged(index)" >
+                        <ion-slide>
+                            <p><img src="img/Colourful_shopping.jpg" ></p>
+                        </ion-slide>                        
+                        <ion-slide>
+                            <p><img src="img/sell_buy.jpg"></p>
+                        </ion-slide>                        
+                        <ion-slide>
+                            <p><img src="img/Colourful_shopping.jpg" ></p>
+                        </ion-slide>                        
+                        <ion-slide>
+                            <p><img src="img/sell_buy.jpg"></p>
+                        </ion-slide>
+                        <ion-slide>
+                            <p><img src="img/google_shopping.jpg" ></p>
+                        </ion-slide>
+                    </ion-slide-box>
+                    <div class = "row icon-row padding-bottom padding-top">
+                        <div class="col text-center padding-right button-img-size">
+                             <a href="#/tab/trending" >
+                                 <img class="button-height-home" src="img/trending_logo.png" height="110" width="100%" >
+                            </a>    
+                        </div>
+                        <div class = "col text-center button-img-size">
+                            <a href="#/tab/location">
+                                <img class="button-height-home" src="img/location.png" height="110" width="100%" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class = "row icon-row padding-bottom">
+                        <div class = "col text-center padding-right button-img-size">
+                            <a href="#/tab/chefs">
+                                <img class="button-height-home" src="img/chef.jpg" height="110" width="100%" >  
+                            </a>
+                        </div>
+                        <div class = "col text-center ">
+                            <a href="#/tab/products">
+                                <img class="button-height-home" src="img/products.jpg" height="110" width="100%" >
+                            </a>
+                        </div>
+                    </div>
+                 </ion-view>
+            </section> 
+        </ion-content>
+    </ion-pane>
+ 
+<!--  </body>-->
+</ion-view>

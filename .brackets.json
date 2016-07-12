@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "E:/myApp/shop/platforms/android/build/intermediates/assets/debug/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "E:/myApp/shop/gulpfile.js",
+        "E:/myApp/shop/platforms/android/build/intermediates/assets/debug/www/cordova_plugins.js",
+        "E:/myApp/shop/platforms/android/cordova/lib/builders/AntBuilder.js",
+        "E:/myApp/shop/www/shop/app.js",
+        "E:/myApp/shop/platforms/android/cordova/lib/device.js"
+    ]
+}

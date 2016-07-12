@@ -1,0 +1,51 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-background-color">
+    <h1 class="title bar-background-color">Registration</h1>
+    <div class="buttons">
+      <button class="button button-clear bar-background-color" ng-click="closeRegistraton()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder='Your Name' ng-model="register.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder='Your Password' ng-model="register.password">
+        </label>  
+        <label class="item item-input">
+          <span class="input-label">Email Address</span>
+          <input type="email" placeholder='Your Email' ng-model="register.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Mobile Number</span>
+          <input type="text" placeholder='Your Contact Number' ng-model="register.mob">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Postal code</span>
+          <input type="password" placeholder='Postal Code' ng-model="register.pin">
+        </label>
+        <div class="item label-padding-sell">
+            <label class="padding-radio" aria-label="userType">User Type</label>
+            <label class="padding-radio">
+                <input type="radio" ng-model="register.userType" value="Seller">Seller                            
+            </label>
+            <label>
+                <input type="radio" ng-model="register.userType" value="Buyer">Buyer                           
+            </label>
+        </div>  
+        <label class="item button-height">
+            <div class="button-height">
+                <button class="button button-block button-positive" ng-click="registerUser()">Register</button>
+            </div>
+            <div class="bar bar-footer bar-assertive" ng-show="error">
+                <div class="title">{{ error}}</div>
+            </div>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

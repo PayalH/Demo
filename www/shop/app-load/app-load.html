@@ -1,0 +1,26 @@
+<ion-modal-view>
+    <div class="modal image-modal transparent location" >
+        <ion-slide-box on-slide-changed="slideChanged(index)" 
+                       show-pager="false" auto-play="true" does-continue="true" slide-interval="3000">
+          <ion-slide   ng-repeat="oImage in aImages">
+            <img ng-src="{{oImage.src}}" class="fullscreen-image" />
+              <p class="info">{{oImage.msg}}</p>
+
+          </ion-slide>
+            
+        </ion-slide-box>
+        <div class="bar bar-subfooter auto-height background-transparent">
+            <div class="row">
+                    <a href="#/tab/home" class="font-size"><b>Skip</b></a>
+            </div>
+        </div>
+        <ion-footer-bar align-title="left">
+            <div class="button-height padding-right button-fifty">
+                <button class="button button-block button-positive font-size" ng-click="login()">Sign in</button>
+            </div>
+            <div class="button-height button-fifty">
+                <button class="button button-block button-positive button-height font-size" ng-click="registration()">Sign up</button>
+            </div>
+        </ion-footer-bar>
+    </div>        
+</ion-modal-view>

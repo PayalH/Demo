@@ -1,0 +1,34 @@
+<ion-header-bar class="bar-subheader padding-top-null padding-null">
+  <div class="item-input-inset padding-top-null">
+    <label class="item-input-wrapper">
+      <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" class="search-width" placeholder="Search" ng-model="search">
+<!--                <button ng-if="search.length" class="button button-icon ion-android-close input-button" ng-click="clearSearch()"></button>-->
+    </label>            
+  </div>         
+</ion-header-bar>
+<ion-view view-title="Trending">    
+    <ion-pane>        
+        <ion-content>
+            <!--            
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{product.product_id}}">
+-->           
+              <div ng-click="flip()" class="flip-container">
+                  <a collection-repeat="product in productdata |searchtext:search" class="item list widecard" href="#/tab/productDetail/{{product.product_id}}">
+                  <div class="item item-divider item-image">
+                    <img ng-src="{{product.photo}}">
+                  </div>
+                  <div class="item item-divider item-text-wrap"><h2>Product name: {{product.product_name}}</h2></div>
+                  <div class="item item-divider item-text-wrap"><h2>Price: {{product.price}}</h2></div>               
+                </a>
+            </div>
+                <div ng-if='(product.length==0)'>
+                  <div class='ion-catalog-content'>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="positive" style="text-align:center">No product yet.</div>
+                  </div>
+                </div>
+            </div>
+        </ion-content>
+    </ion-pane>
+</ion-view>
