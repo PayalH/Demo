@@ -27,15 +27,6 @@ angular.module('starter.services', [])
 })
 
 .service('productService', function($http) {
-  return{
-      getAll: function() {
-      var link = 'http://talpeo.ucoindia.com/shoppingapp/webservice/productlist.php';
-        return $http.get(link, {      
-            }).then(function (data){ 
-           return data;
-            })
-        }
-    };
  })  
         
 .service('productIdservice', function(productService, $q) {
